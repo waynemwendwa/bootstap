@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage BS</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More cars
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#brochure">Brochure</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    <section id="home" class="separate">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Porsche.jpg" class="d-block w-100" alt="loading" height="500" width="600">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Porsche Models</h5>
+                        <p>Exquisite models by porsche available like the porsche 911 carrera.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Chervolette.jpg" class="d-block w-100" alt="loading" width="600" height="500">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chervolette Models</h5>
+                        <p>Low key fast cars by chervolette like the corvette.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Skyline.jpg" class="d-block w-100" alt="loading" width="600" height="500">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nissan Models</h5>
+                        <p>Amazing supercar by nissan like the Nissan Skyline GTR.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="aboutus" class="separate">
+        <div class="row">
+            <h3 class="headers">About us</h3>
+            <div class="col-md-4 col-lg-4 text-center">
+                <img class="rounded-circle" src="images/Porsche.jpg" alt="loading" height="150" width="150">
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur, culpa ducimus ex illum molestiae odio officiis quae quia sit vero. Ad blanditiis magnam omnis, quo quos voluptatum. Blanditiis!
+
+            </div>
+            <div class="col-md-4 col-lg-4 text-center">
+                <img class="rounded-circle" src="images/Chervolette.jpg" alt="loading" height="150" width="150"> <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur, culpa ducimus ex illum molestiae odio officiis quae quia sit vero. Ad blanditiis magnam omnis, quo quos voluptatum. Blanditiis!
+
+            </div>
+            <div class="col-md-4 col-lg-4 text-center">
+                <img class="rounded-circle" src="images/Skyline.jpg" alt="loading" height="150" width="150">
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur, culpa ducimus ex illum molestiae odio officiis quae quia sit vero. Ad blanditiis magnam omnis, quo quos voluptatum. Blanditiis!
+
+            </div>
+
+
+        </div>
+        <div class="row separate text-center">
+            <table class="table table-bordered table-striped table-hover table-dark table-responsive">
+                <tr>
+                    <th>Car</th>
+                    <th>Release date</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Porche 911 Carrera</td>
+                    <td>9/12/2004</td>
+                    <td>$1.5m</td>
+                </tr>
+                <tr>
+                    <td>Chervolette Corvette</td>
+                    <td>15/11/2015</td>
+                    <td>$2.0m</td>
+                </tr>
+                <tr>
+                    <td>Nissan Skyline GTR</td>
+                    <td>16/18/2018</td>
+                    <td>$5.5m</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="brochure" class="separate">
+        <div class="row text-center">
+            <h3>The Brochures</h3>
+            <div class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="images/Porsche.jpg" class="card-img-top" alt="loading">
+                    <div class="card-body">
+                        <h5 class="card-title">PORSCHE MODEL</h5>
+                        <p class="card-text">The Porsche 911 Carrera the ideal fast car. <br>
+                        If you are in search of a fast car from porsche stuttgart then the carrera 911 is the highly recommended option.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Horse power: 500hp</li>
+                        <li class="list-group-item">Engine Type: Four wheel drive V6</li>
+                        <li class="list-group-item">Top speed: 300mp/hr</li>
+                        <li class="list-group-item">not to 60mp/hr: Under 5seconds</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="images/Chervolette.jpg" class="card-img-top" alt="loading">
+                    <div class="card-body">
+                        <h5 class="card-title">CHERVOLETTE MODEL</h5>
+                        <p class="card-text">The Chervolette Corvette classy and fast as expected from Chervolette. <br>
+                        For the love of England as its yellow logo usually shouts the corvette is different in that its logo is kind of two flags which makes special. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Horse Power: 450hp</li>
+                        <li class="list-group-item">Engine type: Rear wheel drive V8</li>
+                        <li class="list-group-item">Top speed: 250mp/hr</li>
+                        <li class="list-group-item">not to 60mp/hr: in 7seconds</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="images/Skyline.jpg" class="card-img-top" alt="loading">
+                    <div class="card-body">
+                        <h5 class="card-title">NISSAN MODEL</h5>
+                        <p class="card-text">The Nissan Skyline GTR everyone loves it a nissan original and the fastest among the other cars presented.
+                            <br>
+                        Thus making it a monster of its own from Nissan</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Horse power: 850hp</li>
+                        <li class="list-group-item">Engine type: Four wheel drive twin turbo V12</li>
+                        <li class="list-group-item">Top Speed: 500mp/hr</li>
+                        <li class="list-group-item">not to 60mp/hr: Under 3 seconds</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+        </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+</div>
+</body>
+</html>
